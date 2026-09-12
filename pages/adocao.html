@@ -1,0 +1,494 @@
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Processo de Adoção | Confort Pet</title>
+    <meta name="description" content="Conheça o processo de adoção responsável da Confort Pet e preencha seu cadastro para encontrar um novo companheiro.">
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+    <header class="header">
+        <div class="header-container">
+
+            <a href="../index.html" class="logo" aria-label="Confort Pet - Página inicial">
+                <span class="logo-text">Confort Pet</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="navMenu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="animais.html">Animais</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="como-ajudar.html">Como ajudar</a></li>
+                    <li><a href="adocao.html" class="btn-nav active" aria-current="page">Quero adotar</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- =========================
+             HERO
+             Imagem acima do conteúdo
+             ========================= -->
+        <section class="hero-section">
+            <div class="hero-container">
+
+                <div class="hero-media">
+                    <img
+                        src="../assets/images/hero-adocao.jpg"
+                        alt="Cão e gato juntos em um ambiente acolhedor">
+                </div>
+
+                <div class="hero-content">
+                    <span class="hero-tag">ADOÇÃO RESPONSÁVEL</span>
+
+                    <h1 class="hero-title">
+                        Encontre um novo
+                        <span class="highlight">melhor amigo.</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Adotar é oferecer uma nova oportunidade, mas também assumir
+                        um compromisso de cuidado, respeito e responsabilidade.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             ANTES DE ADOTAR
+             ========================= -->
+        <section class="commitments-section">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Antes de adotar</h2>
+                    <p>
+                        Adotar um pet é uma decisão importante.
+                        Certifique-se de estar preparado para os seguintes compromissos:
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">⏰</div>
+                        <h3>Tempo para cuidar</h3>
+                        <p>
+                            Dedique tempo diário para passeios, brincadeiras,
+                            higiene e atenção afetuosa ao seu pet.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">🥣</div>
+                        <h3>Alimentação adequada</h3>
+                        <p>
+                            Garanta ração de boa qualidade, água fresca e
+                            nutrição compatível com a fase de vida do animal.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">🩺</div>
+                        <h3>Cuidados veterinários</h3>
+                        <p>
+                            Mantenha a rotina de vacinação, vermifugação,
+                            consultas periódicas e reserva para emergências de saúde.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">🏡</div>
+                        <h3>Espaço seguro</h3>
+                        <p>
+                            Ofereça ambiente protegido de fugas e intempéries,
+                            com redes de proteção para gatos e abrigo confortável.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">♾️</div>
+                        <h3>Compromisso para a vida toda</h3>
+                        <p>
+                            Esteja preparado para cuidar do animal por muitos anos,
+                            em todas as etapas da sua vida.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             FORMULÁRIO DE ADOÇÃO
+             ========================= -->
+        <section class="adoption-form-section" id="form-adocao">
+            <div class="container">
+
+                <div class="form-container-box">
+
+                    <div class="section-title text-left">
+                        <h2>Formulário de Interesse em Adoção</h2>
+                        <p>
+                            Preencha com atenção. As informações nos ajudam a
+                            identificar o perfil ideal para cada animal.
+                        </p>
+                    </div>
+
+                    <div
+                        id="adoptionSuccess"
+                        class="alert-success"
+                        role="alert"
+                        hidden>
+                        ✓ Cadastro enviado com sucesso!
+                        Nossa equipe poderá entrar em contato para dar continuidade
+                        ao processo de adoção.
+                    </div>
+
+                    <form id="adoptionForm" novalidate>
+
+                        <!-- DADOS PESSOAIS -->
+                        <fieldset class="form-fieldset">
+                            <legend class="fieldset-title">Seus dados</legend>
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+                                    <label for="fullName">Nome completo *</label>
+                                    <input type="text" id="fullName" name="fullName"
+                                           autocomplete="name" required
+                                           placeholder="Digite seu nome completo">
+                                    <span class="error-text" id="fullNameError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">E-mail *</label>
+                                    <input type="email" id="email" name="email"
+                                           autocomplete="email" required
+                                           placeholder="seuemail@exemplo.com">
+                                    <span class="error-text" id="emailError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Telefone / WhatsApp *</label>
+                                    <input type="tel" id="phone" name="phone"
+                                           autocomplete="tel" required
+                                           placeholder="(00) 00000-0000">
+                                    <span class="error-text" id="phoneError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="city">Cidade *</label>
+                                    <input type="text" id="city" name="city"
+                                           autocomplete="address-level2" required
+                                           placeholder="Sua cidade">
+                                    <span class="error-text" id="cityError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="state">Estado (UF) *</label>
+                                    <input type="text" id="state" name="state"
+                                           autocomplete="address-level1"
+                                           maxlength="2" required
+                                           placeholder="Ex.: SP">
+                                    <span class="error-text" id="stateError"></span>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                        <!-- ROTINA E MORADIA -->
+                        <fieldset class="form-fieldset">
+                            <legend class="fieldset-title">Sua rotina e moradia</legend>
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+                                    <label for="housingType">Você mora em casa ou apartamento? *</label>
+                                    <select id="housingType" name="housingType" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="casa">Casa</option>
+                                        <option value="apartamento">Apartamento</option>
+                                        <option value="chacara_sitio">Chácara / Sítio</option>
+                                    </select>
+                                    <span class="error-text" id="housingTypeError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="propertyStatus">O imóvel é próprio ou alugado? *</label>
+                                    <select id="propertyStatus" name="propertyStatus" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="proprio">Propriedade própria</option>
+                                        <option value="alugado">Alugado (com permissão para pets)</option>
+                                    </select>
+                                    <span class="error-text" id="propertyStatusError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="safeSpace">Possui espaço seguro para o animal? *</label>
+                                    <select id="safeSpace" name="safeSpace" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="sim_telas">Sim (muros altos / telas de proteção)</option>
+                                        <option value="sim_parcial">Sim (parcialmente protegido)</option>
+                                        <option value="em_adaptacao">Ainda vou adaptar o local</option>
+                                    </select>
+                                    <span class="error-text" id="safeSpaceError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="otherPets">Há outros animais na residência? *</label>
+                                    <select id="otherPets" name="otherPets" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="nao">Não, nenhum</option>
+                                        <option value="sim_caes">Sim, cão(ães)</option>
+                                        <option value="sim_gatos">Sim, gato(s)</option>
+                                        <option value="sim_ambos">Sim, cão(ães) e gato(s)</option>
+                                    </select>
+                                    <span class="error-text" id="otherPetsError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="hasChildren">Há crianças na residência? *</label>
+                                    <select id="hasChildren" name="hasChildren" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="nao">Não há crianças</option>
+                                        <option value="sim_pequenas">Sim, crianças de 0 a 6 anos</option>
+                                        <option value="sim_maiores">Sim, crianças acima de 7 anos</option>
+                                    </select>
+                                    <span class="error-text" id="hasChildrenError"></span>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                        <!-- PREFERÊNCIAS -->
+                        <fieldset class="form-fieldset">
+                            <legend class="fieldset-title">Sobre a adoção</legend>
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+                                    <label for="petPreference">Qual animal deseja adotar? *</label>
+                                    <select id="petPreference" name="petPreference" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="cao">Cão</option>
+                                        <option value="gato">Gato</option>
+                                        <option value="indeciso">Ainda não decidi</option>
+                                    </select>
+                                    <span class="error-text" id="petPreferenceError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="agePreference">Preferência de idade *</label>
+                                    <select id="agePreference" name="agePreference" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="filhote">Filhote</option>
+                                        <option value="adulto">Adulto</option>
+                                        <option value="idoso">Idoso</option>
+                                        <option value="sem_preferencia">Sem preferência</option>
+                                    </select>
+                                    <span class="error-text" id="agePreferenceError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="hadPetsBefore">Já teve animais anteriormente? *</label>
+                                    <select id="hadPetsBefore" name="hadPetsBefore" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="sim">Sim</option>
+                                        <option value="nao">Não, será o primeiro</option>
+                                    </select>
+                                    <span class="error-text" id="hadPetsBeforeError"></span>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group margin-top-group">
+                                <label for="whyAdopt">Por que deseja adotar? *</label>
+                                <textarea id="whyAdopt" name="whyAdopt" rows="3" required
+                                          placeholder="Descreva brevemente suas motivações para adotar um animal..."></textarea>
+                                <span class="error-text" id="whyAdoptError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="howToCare">Como pretende cuidar do animal no dia a dia? *</label>
+                                <textarea id="howToCare" name="howToCare" rows="3" required
+                                          placeholder="Explique sobre passeios, tempo sozinho, rotina e cuidados quando viajar..."></textarea>
+                                <span class="error-text" id="howToCareError"></span>
+                            </div>
+                        </fieldset>
+
+                        <!-- COMPROMISSO -->
+                        <fieldset class="form-fieldset">
+                            <legend class="fieldset-title">Compromisso e Declaração</legend>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="checkTruth" name="checkTruth" required>
+                                    <span>Declaro que as informações fornecidas são verdadeiras. *</span>
+                                </label>
+                                <span class="error-text" id="checkTruthError"></span>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="checkLongTerm" name="checkLongTerm" required>
+                                    <span>Estou ciente de que a adoção é uma responsabilidade de longo prazo. *</span>
+                                </label>
+                                <span class="error-text" id="checkLongTermError"></span>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="checkContact" name="checkContact" required>
+                                    <span>Concordo em receber contato sobre o processo de adoção. *</span>
+                                </label>
+                                <span class="error-text" id="checkContactError"></span>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-submit-container">
+                            <button type="submit" class="btn-submit-large">
+                                Enviar cadastro
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             COMO FUNCIONA
+             ========================= -->
+        <section class="how-it-works-section">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Como funciona?</h2>
+                    <p>
+                        Entenda as etapas simplificadas até a chegada do seu companheiro.
+                    </p>
+                </div>
+
+                <div class="steps-grid">
+
+                    <article class="step-card">
+                        <span class="step-number">1</span>
+                        <h3>Preencha o cadastro</h3>
+                        <p>Envie o formulário com suas informações e perfil de moradia e rotina.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">2</span>
+                        <h3>Conheça o animal</h3>
+                        <p>Nossa equipe apoiará no alinhamento do perfil com o pet ideal para você.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">3</span>
+                        <h3>Converse com nossa equipe</h3>
+                        <p>Uma breve entrevista para esclarecer dúvidas sobre os cuidados diários.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">4</span>
+                        <h3>Prepare seu lar</h3>
+                        <p>Ajuste os detalhes de segurança e adapte o espaço para receber o animal.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">5</span>
+                        <h3>Comece uma nova história</h3>
+                        <p>Assinatura do termo de adoção responsável e boas-vindas ao novo amigo!</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             CTA
+             ========================= -->
+        <section class="cta-section">
+            <div class="container cta-box">
+                <h2>Pronto para começar uma nova história?</h2>
+                <p>
+                    Confira nossa galeria e descubra os cães e gatos
+                    que estão prontos para receber amor.
+                </p>
+                <a href="animais.html" class="btn-cta">Conhecer animais</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <span class="logo-text">Confort Pet</span>
+                <p>
+                    Plataforma dedicada à promoção da adoção responsável
+                    e ao bem-estar animal.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="animais.html">Animais</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="como-ajudar.html">Como ajudar</a></li>
+                    <li><a href="adocao.html">Quero adotar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>contato@amoranimal.org</p>
+                <p>(11) 99999-8888</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Confort Pet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript global -->
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

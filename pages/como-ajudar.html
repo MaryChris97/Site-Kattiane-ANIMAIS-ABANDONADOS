@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Como Ajudar | Confort Pet</title>
+    <meta name="description" content="Veja como você pode ajudar a Confort Pet por meio de adoção, doação, voluntariado, divulgação e lar temporário.">
+
+    <!-- CSS global e específico -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER / CABEÇALHO
+         ========================= -->
+    <header class="header">
+        <div class="header-container">
+
+            <a href="../index.html" class="logo" aria-label="Confort Pet - Página inicial">
+                <span class="logo-text">Confort Pet</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="navMenu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="animais.html">Animais</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="como-ajudar.html" class="active" aria-current="page">Como ajudar</a></li>
+                    <li><a href="adocao.html" class="btn-nav">Quero adotar</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- =========================
+             HERO
+             Imagem acima do conteúdo
+             ========================= -->
+        <section class="hero-section">
+            <div class="hero-container">
+
+                <div class="hero-media">
+                    <img
+                        src="../assets/images/hero-ajudar.jpg"
+                        alt="Mão segurando a pata de um cão em sinal de carinho e apoio">
+                </div>
+
+                <div class="hero-content">
+                    <span class="hero-tag">FAÇA A DIFERENÇA</span>
+
+                    <h1 class="hero-title">
+                        Existem muitas
+                        <span class="highlight">formas de ajudar.</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Nem todo mundo pode adotar, mas qualquer pessoa pode contribuir
+                        para transformar a vida de um animal. Descubra a forma de apoio
+                        que melhor se adapta a você.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================
+             FORMAS DE AJUDAR
+             ========================= -->
+        <section class="ways-to-help-section">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Como você pode colaborar</h2>
+                    <p>
+                        Escolha uma das modalidades abaixo e faça parte da nossa
+                        rede de proteção.
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">🏠</div>
+                        <h3>Adoção</h3>
+                        <p>
+                            Ofereça um lar, carinho e uma nova oportunidade para
+                            um animal que aguarda um lar definitivo.
+                        </p>
+                        <a href="adocao.html" class="btn-link">Ver processo de adoção →</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">💛</div>
+                        <h3>Apadrinhamento</h3>
+                        <p>
+                            Ajude nos cuidados e custos mensais de um animal específico,
+                            mesmo sem poder levá-lo para casa.
+                        </p>
+                        <a href="#pix-donation" class="btn-link">Apadrinhar →</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">🤝</div>
+                        <h3>Voluntariado</h3>
+                        <p>
+                            Dedique seu tempo, amor e habilidades para apoiar
+                            as ações da causa animal.
+                        </p>
+                        <a href="#form-voluntario" class="btn-link">Seja voluntário →</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">🎁</div>
+                        <h3>Doação</h3>
+                        <p>
+                            Contribua financeiramente ou com insumos para alimentação,
+                            cuidados veterinários e resgates.
+                        </p>
+                        <a href="#pix-donation" class="btn-link">Fazer doação →</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">📢</div>
+                        <h3>Divulgação</h3>
+                        <p>
+                            Compartilhe os animais disponíveis em suas redes sociais
+                            e ajude-os a encontrar uma família.
+                        </p>
+                        <a href="noticias.html" class="btn-link">Ver notícias →</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="card-icon" aria-hidden="true">🏡</div>
+                        <h3>Lar temporário</h3>
+                        <p>
+                            Ofereça temporariamente um espaço seguro e acolhedor
+                            para um pet durante sua recuperação.
+                        </p>
+                        <a href="#form-voluntario" class="btn-link">Oferecer lar →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             DOAÇÃO
+             ========================= -->
+        <section class="donation-section" id="pix-donation">
+            <div class="container">
+
+                <div class="donation-box">
+
+                    <div class="section-title">
+                        <h2>Sua contribuição faz a diferença</h2>
+                        <p>
+                            Os recursos arrecadados são destinados diretamente
+                            aos cuidados com os animais resgatados.
+                        </p>
+                    </div>
+
+                    <div class="donation-purposes">
+
+                        <div class="purpose-item">
+                            <span class="purpose-icon" aria-hidden="true">🦴</span>
+                            <span>Alimentação</span>
+                        </div>
+
+                        <div class="purpose-item">
+                            <span class="purpose-icon" aria-hidden="true">💊</span>
+                            <span>Medicamentos</span>
+                        </div>
+
+                        <div class="purpose-item">
+                            <span class="purpose-icon" aria-hidden="true">🩺</span>
+                            <span>Cuidados veterinários</span>
+                        </div>
+
+                        <div class="purpose-item">
+                            <span class="purpose-icon" aria-hidden="true">🛟</span>
+                            <span>Resgates</span>
+                        </div>
+
+                        <div class="purpose-item">
+                            <span class="purpose-icon" aria-hidden="true">✂️</span>
+                            <span>Castração</span>
+                        </div>
+
+                    </div>
+
+                    <div class="pix-card">
+
+                        <h3>Contribua via PIX</h3>
+
+                        <p>
+                            Utilize a chave oficial para realizar doações
+                            pontuais ou recorrentes:
+                        </p>
+
+                        <div class="pix-input-group">
+                            <input
+                                type="text"
+                                id="pixKey"
+                                value="CHAVE PIX — INSIRA A CHAVE OFICIAL AQUI"
+                                readonly
+                                aria-label="Chave PIX demonstrativa">
+
+                            <button
+                                type="button"
+                                id="copyPixBtn"
+                                class="btn-copy">
+                                Copiar PIX
+                            </button>
+                        </div>
+
+                        <span
+                            id="copySuccess"
+                            class="copy-alert"
+                            role="status"
+                            hidden>
+                            ✓ Chave PIX copiada para a área de transferência!
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             VOLUNTARIADO
+             ========================= -->
+        <section class="volunteer-section" id="form-voluntario">
+            <div class="container">
+
+                <div class="form-container-box">
+
+                    <div class="section-title text-left">
+                        <h2>Quer ser voluntário?</h2>
+                        <p>
+                            Preencha os dados abaixo e entraremos em contato
+                            para apresentar nossas frentes de atuação.
+                        </p>
+                    </div>
+
+                    <div
+                        id="volunteerSuccess"
+                        class="alert-success"
+                        role="alert"
+                        hidden>
+                        ✓ Cadastro enviado com sucesso!
+                        Agradecemos o interesse em se juntar à nossa causa.
+                    </div>
+
+                    <form id="volunteerForm" novalidate>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="volName">Nome completo *</label>
+                                <input
+                                    type="text"
+                                    id="volName"
+                                    name="volName"
+                                    autocomplete="name"
+                                    required
+                                    placeholder="Digite seu nome completo">
+                                <span class="error-text" id="volNameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="volEmail">E-mail *</label>
+                                <input
+                                    type="email"
+                                    id="volEmail"
+                                    name="volEmail"
+                                    autocomplete="email"
+                                    required
+                                    placeholder="seuemail@exemplo.com">
+                                <span class="error-text" id="volEmailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="volPhone">Telefone / WhatsApp *</label>
+                                <input
+                                    type="tel"
+                                    id="volPhone"
+                                    name="volPhone"
+                                    autocomplete="tel"
+                                    required
+                                    placeholder="(00) 00000-0000">
+                                <span class="error-text" id="volPhoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="volInterest">Área de interesse *</label>
+                                <select id="volInterest" name="volInterest" required>
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="resgates">Apoio em resgates</option>
+                                    <option value="eventos">Eventos e feiras de adoção</option>
+                                    <option value="transporte">Transporte de animais</option>
+                                    <option value="lar_temporario">Lar temporário</option>
+                                    <option value="comunicacao">Comunicação e mídias</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                                <span class="error-text" id="volInterestError"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volAvailability">Disponibilidade de tempo *</label>
+                            <select id="volAvailability" name="volAvailability" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="finais_semana">Apenas finais de semana</option>
+                                <option value="dias_semana">Dias úteis (período parcial)</option>
+                                <option value="eventual">Eventual / Conforme demanda</option>
+                            </select>
+                            <span class="error-text" id="volAvailabilityError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volMessage">Mensagem / Observações *</label>
+                            <textarea
+                                id="volMessage"
+                                name="volMessage"
+                                rows="4"
+                                required
+                                placeholder="Conte-nos um pouco sobre você e como prefere ajudar..."></textarea>
+                            <span class="error-text" id="volMessageError"></span>
+                        </div>
+
+                        <div class="form-submit-container">
+                            <button type="submit" class="btn-submit-large">
+                                Quero ser voluntário
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             CTA
+             ========================= -->
+        <section class="cta-section">
+            <div class="container cta-box">
+                <h2>Pequenas atitudes podem mudar uma vida</h2>
+
+                <p>
+                    Mesmo que você não possa adotar agora, compartilhar nossas
+                    publicações ou apoiar nossas ações ajuda a transformar destinos.
+                </p>
+
+                <a href="adocao.html" class="btn-cta">
+                    Quero adotar
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <span class="logo-text">Confort Pet</span>
+                <p>
+                    Plataforma dedicada à promoção da adoção responsável
+                    e ao bem-estar animal.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="animais.html">Animais</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="como-ajudar.html">Como ajudar</a></li>
+                    <li><a href="adocao.html">Quero adotar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>contato@amoranimal.org</p>
+                <p>(11) 99999-8888</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Confort Pet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript global -->
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

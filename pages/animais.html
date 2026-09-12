@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Animais para Adoção | Amor Animal</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="../index.html" class="logo">
+            <img
+                src="../assets/images/logo.png"
+                alt="Amor Animal"
+            >
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+        >
+            ☰
+        </button>
+
+        <nav class="nav" id="mainNav">
+
+            <a href="../index.html">
+                Início
+            </a>
+
+            <a href="animais.html" class="active">
+                Animais
+            </a>
+
+            <a href="noticias.html">
+                Notícias
+            </a>
+
+            <a href="parceiros.html">
+                Parceiros
+            </a>
+
+            <a href="como-ajudar.html">
+                Como ajudar
+            </a>
+
+            <a href="adocao.html" class="nav-button">
+                Quero adotar
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+
+                    <span class="section-tag">
+                        Adoção responsável
+                    </span>
+
+                    <h1>
+                        Animais esperando por você
+                    </h1>
+
+                    <p>
+                        Conheça nossos animais disponíveis para adoção.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUSCA -->
+
+            <div class="animal-filters">
+
+                <input
+                    type="search"
+                    id="animalSearch"
+                    placeholder="🔎 Pesquisar pelo nome..."
+                >
+
+
+                <div class="category-buttons">
+
+                    <button
+                        class="category-button active"
+                        data-category="todos"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        class="category-button"
+                        data-category="cachorro"
+                    >
+                        🐶 Cachorros
+                    </button>
+
+                    <button
+                        class="category-button"
+                        data-category="gato"
+                    >
+                        🐱 Gatos
+                    </button>
+
+                    <button
+                        class="category-button"
+                        data-category="outro"
+                    >
+                        🐰 Outros
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANIMAIS -->
+
+            <div class="animals-grid">
+
+
+                <article
+                    class="animal-card"
+                    data-category="cachorro"
+                    data-name="thor"
+                >
+
+                    <div class="animal-photo">
+
+                        <img
+                            src="../assets/images/animais/cachorro-01.jpg"
+                            alt="Thor"
+                        >
+
+                        <span class="animal-status">
+                            Disponível
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <h3>
+                            Thor
+                        </h3>
+
+                        <p>
+                            🐶 Cachorro • 2 anos
+                        </p>
+
+                        <span class="animal-description">
+                            Macho • Porte médio • Vacinado
+                        </span>
+
+                        <a
+                            href="animal.html?id=thor"
+                            class="btn btn-primary btn-full"
+                        >
+                            Ver detalhes
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="animal-card"
+                    data-category="gato"
+                    data-name="luna"
+                >
+
+                    <div class="animal-photo">
+
+                        <img
+                            src="../assets/images/animais/gato-01.jpg"
+                            alt="Luna"
+                        >
+
+                        <span class="animal-status">
+                            Disponível
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <h3>
+                            Luna
+                        </h3>
+
+                        <p>
+                            🐱 Gato • 1 ano
+                        </p>
+
+                        <span class="animal-description">
+                            Fêmea • Porte pequeno • Vacinada
+                        </span>
+
+                        <a
+                            href="animal.html?id=luna"
+                            class="btn btn-primary btn-full"
+                        >
+                            Ver detalhes
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="animal-card"
+                    data-category="cachorro"
+                    data-name="bob"
+                >
+
+                    <div class="animal-photo">
+
+                        <img
+                            src="../assets/images/animais/cachorro-02.jpg"
+                            alt="Bob"
+                        >
+
+                        <span class="animal-status">
+                            Disponível
+                        </span>
+
+                    </div>
+
+                    <div class="animal-info">
+
+                        <h3>
+                            Bob
+                        </h3>
+
+                        <p>
+                            🐶 Cachorro • 3 anos
+                        </p>
+
+                        <span class="animal-description">
+                            Macho • Porte grande • Vacinado
+                        </span>
+
+                        <a
+                            href="animal.html?id=bob"
+                            class="btn btn-primary btn-full"
+                        >
+                            Ver detalhes
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
+
