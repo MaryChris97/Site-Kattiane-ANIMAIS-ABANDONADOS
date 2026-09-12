@@ -670,91 +670,44 @@ textarea {
 ========================================================= */
 
 .about-grid {
-
     display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
+    /* Usa colunas flexíveis que se ajustam em telas menores */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 60px;
-
     align-items: center;
 }
 
-
 .about-image {
-
-    height: 410px;
-
+    /* Define o tamanho proporcional exato da sua imagem original */
+    width: 100%;
+    max-width: 743px;
+    
+    /* aspect-ratio replica exatamente a proporção da imagem enviada */
+    aspect-ratio: 743 / 812; 
+    
+    /* Remove restrições de altura fixa que estavam cortando o topo/base */
+    height: auto; 
+    
     border-radius: 22px;
-
     overflow: hidden;
-
     background: var(--orange-light);
-
     box-shadow: var(--shadow);
 }
 
-
 .about-image img {
-
+    width: 100%;
     height: 100%;
-
-    transition:
-        transform 0.5s ease;
+    
+    /* Garante que a arte inteira preencha sem distorções */
+    object-fit: cover;
+    object-position: center;
+    
+    transition: transform 0.5s ease;
 }
-
 
 .about-image:hover img {
-
     transform: scale(1.04);
 }
-
-
-.about-content h2 {
-
-    font-size:
-        clamp(30px, 4vw, 43px);
-
-    color: var(--black);
-
-    line-height: 1.15;
-
-    margin-bottom: 20px;
-}
-
-
-.about-content p {
-
-    margin-bottom: 15px;
-
-    color: var(--text-light);
-
-    line-height: 1.7;
-}
-
-
-.text-link {
-
-    color: var(--orange);
-
-    font-weight: bold;
-
-    display: inline-block;
-
-    margin-top: 15px;
-
-    transition: var(--transition);
-}
-
-
-.text-link:hover {
-
-    color: var(--orange-dark);
-
-    transform: translateX(4px);
-}
-
 
 /* =========================================================
    ANIMAIS
